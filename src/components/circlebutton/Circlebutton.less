@@ -1,0 +1,98 @@
+ .circleProgress_wrapper {   
+    width: 200px;   
+    height: 200px;   
+    margin: 50px auto;   
+    position: relative;   
+  }   
+  .wrapper {   
+    width: 100px;   
+    height: 200px;   
+    position: absolute;   
+    top:0;   
+    overflow: hidden;   
+  }   
+  .right {   
+    right:0;   
+  }   
+  .left{   
+    left:0;   
+  }  
+  
+  .circleProgress {   
+    width: 180px;   
+    height: 180px;   
+    border:10px solid transparent;   
+    border-radius: 50%;   
+    position: absolute;   
+    top:0;   
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background-color:blue;
+  }   
+  .rightcircle {   
+    border-top: 10px solid green;
+    border-right: 10px solid green;
+    right:0;   
+    -webkit-animation: circleProgressLoad_right 5s linear infinite;
+    animation: circleProgressLoad_right 5s linear infinite;
+  }
+  .rightinit {
+      right: 0;
+  }   
+  .leftcircle {   
+    border-bottom:10px solid green;
+    border-left: 10px solid green;
+    left:0;   
+    -webkit-animation: circleProgressLoad_left 5s linear infinite;
+    animation: circleProgressLoad_left 5s linear infinite;
+  }  
+  .leftinit {
+      left: 0;
+  }
+  .circletitle {
+    margin-top: -67%;
+    margin-left: 23%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titlename {
+      font-size: 30px;
+      font-family: 微软雅黑;
+      color: #f8f8f8;
+      z-index: 99;
+  }
+  @-webkit-keyframes circleProgressLoad_right{   
+    0%{   
+      -webkit-transform: rotate(-135deg);   
+    }   
+    50%,100%{   
+      -webkit-transform: rotate(45deg);   
+    }   
+  }   
+  @-webkit-keyframes circleProgressLoad_left{   
+    0%,50%{   
+      -webkit-transform: rotate(-135deg);   
+    }   
+    100%{   
+      -webkit-transform: rotate(45deg);   
+    }   
+  }
+  @keyframes circleProgressLoad_right{   
+    0%{   
+      transform: rotate(-135deg);   
+    }   
+    50%,100%{   
+      transform: rotate(45deg);   
+    }   
+  }   
+  @keyframes circleProgressLoad_left{   
+    0%,50%{   
+      transform: rotate(-135deg);   
+    }   
+    100%{   
+      transform: rotate(45deg);   
+    }   
+  } 
