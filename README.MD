@@ -43,7 +43,7 @@
 
 2. 进入 [ 企业应用 ], 新建应用: 
    提示1: 准备图标一枚,必用
-   提示2: 首页地址填写为 ' http://192.168.10.11/ ',尾部的斜杠必须存在,否则就坑自己.
+   提示2: 首页地址填写为 ' http://192.168.11.170/ ',尾部的斜杠必须存在,否则就坑自己.
    提示3: 创建完成后,需要再次打开设置,复制 AgentID 存到文件备用 
 
 3. 进入微应用设置,复制 CorpID和CorpSecret 存到文件备用
@@ -75,10 +75,10 @@
     >   提示: -a ding 参数是别名, 下次本机使用 nowa init ding,就可以创建项目.
 
 2. 启动项目: npm start 
-3. 打开浏览器,地址输入: http://192.168.10.11:3000 , 并打开浏览器调试控制台.
+3. 打开浏览器,地址输入: http://192.168.11.170:3000 , 并打开浏览器调试控制台.
 4. 进行体验
 
-    > 方式1: 浏览器打开 http://192.168.10.11/3000 预览,并打开浏览器的调试控制台 
+    > 方式1: 浏览器打开 http://192.168.11.170/3000 预览,并打开浏览器的调试控制台 
 
     > 方式2: 
         mac: 模拟器打开钉钉进入自建微应用,并启用浏览器调试
@@ -100,7 +100,6 @@
 4. 数据层解决工具
 
 * natty-storage: [一个优秀的项目api资源管理库](https://github.com/Jias/natty-fetch)
-* no-flux:  [一个简洁新兴的React数据状态处理库](https://github.com/fengsx/no-flux)
 * unity-api: [一个方便的React数据和view交互管理库](https://github.com/fengsx/no-flux)
 * json-server: [一个强大的模拟数据库](http://g.alicdn.com/platform/tingle-ui/1.1.18/docs/docs.html#tingle-dialog)    
 * mock.js: [一个方便的模拟数据生成器](https://github.com/fengsx/no-flux)
@@ -149,16 +148,6 @@
 * 创建项目: nowa init ding
 * 创建页面: nowa init page | nowa init page-note (带注释)
 * 创建组件: nowa init mod (函数组件) | nowa init rmod(react组件)
-
-# 其他待需要配套的项目
-1. jsonSever: 模拟数据服务
-2. dingAuth: 钉钉鉴权服务
-
-# 待完善...
-1. welcome 样式表需要修正
-2. noflux的logicRender使用方法的demo
-3. ding的类库优化
-3. ding sdk: 支持isv
 
 
 
